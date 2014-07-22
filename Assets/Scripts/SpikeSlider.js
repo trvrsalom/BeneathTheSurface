@@ -46,5 +46,6 @@ function OnTriggerEnter (other : Collider) {
 		}
 	}
 	var deathScript = GameObject.FindGameObjectWithTag("Player").GetComponent(death);
+        Debug.Log("Triggered");
 	deathScript.kill();
 }
